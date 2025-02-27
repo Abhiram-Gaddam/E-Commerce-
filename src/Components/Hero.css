@@ -1,0 +1,50 @@
+/* src/Components/Deals.css */
+
+/* Scrollable Deals Container */
+.deals-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  /* Hide Scrollbar (Optional for modern look) */
+  .deals-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .deals-scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  .deals-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+  
+  /* Deal Card Styling */
+  .deal-card {
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 500px;
+    border: 1px solid #e5e5e5;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .deal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Scrollable Image Container */
+  .deal-image-container {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .deal-image-container img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
